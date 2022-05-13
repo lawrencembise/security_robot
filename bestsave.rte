@@ -1,0 +1,357 @@
+ (routes 
+  (resolution mm 100000)
+  (parser
+  )
+  (parser
+  )
+  (structure_out
+   (layer TOP (type signal)
+   )
+   (layer I1 (type signal)
+   )
+   (layer I2 (type signal)
+   )
+   (layer I3 (type signal)
+   )
+   (layer I4 (type signal)
+   )
+   (layer I5 (type signal)
+   )
+   (layer I6 (type signal)
+   )
+   (layer I7 (type signal)
+   )
+   (layer I8 (type signal)
+   )
+   (layer I9 (type signal)
+   )
+   (layer I10 (type signal)
+   )
+   (layer I11 (type signal)
+   )
+   (layer I12 (type signal)
+   )
+   (layer I13 (type signal)
+   )
+   (layer I14 (type signal)
+   )
+   (layer BOT (type signal)
+   )
+  )
+  (library_out
+  (padstack $VIA#0_SIGNAL
+   (shape (circ TOP 76200 0 0))
+   (shape (circ I1 76200 0 0))
+   (shape (circ I2 76200 0 0))
+   (shape (circ I3 76200 0 0))
+   (shape (circ I4 76200 0 0))
+   (shape (circ I5 76200 0 0))
+   (shape (circ I6 76200 0 0))
+   (shape (circ I7 76200 0 0))
+   (shape (circ I8 76200 0 0))
+   (shape (circ I9 76200 0 0))
+   (shape (circ I10 76200 0 0))
+   (shape (circ I11 76200 0 0))
+   (shape (circ I12 76200 0 0))
+   (shape (circ I13 76200 0 0))
+   (shape (circ I14 76200 0 0))
+   (shape (circ BOT 76200 0 0))
+  )
+  (padstack $VIA#0_POWER
+   (shape (circ TOP 76200 0 0))
+   (shape (circ I1 76200 0 0))
+   (shape (circ I2 76200 0 0))
+   (shape (circ I3 76200 0 0))
+   (shape (circ I4 76200 0 0))
+   (shape (circ I5 76200 0 0))
+   (shape (circ I6 76200 0 0))
+   (shape (circ I7 76200 0 0))
+   (shape (circ I8 76200 0 0))
+   (shape (circ I9 76200 0 0))
+   (shape (circ I10 76200 0 0))
+   (shape (circ I11 76200 0 0))
+   (shape (circ I12 76200 0 0))
+   (shape (circ I13 76200 0 0))
+   (shape (circ I14 76200 0 0))
+   (shape (circ BOT 76200 0 0))
+  )
+  (padstack PS10
+   (shape (circ TOP 450000 0 0))
+   (shape (circ I1 450000 0 0))
+   (shape (circ I2 450000 0 0))
+   (shape (circ I3 450000 0 0))
+   (shape (circ I4 450000 0 0))
+   (shape (circ I5 450000 0 0))
+   (shape (circ I6 450000 0 0))
+   (shape (circ I7 450000 0 0))
+   (shape (circ I8 450000 0 0))
+   (shape (circ I9 450000 0 0))
+   (shape (circ I10 450000 0 0))
+   (shape (circ I11 450000 0 0))
+   (shape (circ I12 450000 0 0))
+   (shape (circ I13 450000 0 0))
+   (shape (circ I14 450000 0 0))
+   (shape (circ BOT 450000 0 0))
+  )
+  )
+  (network_out
+   (Net #00100 
+   (rule
+   )
+   (wire (path TOP 76200  -9017000 -635000 -9461500 -635000 -9461500 -825500
+     -10223500 -825500 -10223500 -2540000 -1206500 -2540000 -1206500 -63500)
+    (connect (terminal pin U3-2) (terminal wire))
+   )
+   (wire (path TOP 76200  -1206500 -63500 -1206500 63500 -8064500 63500
+     -8064500 -508000 -8509000 -508000 -8509000 -889000)
+    (connect (terminal wire) (terminal smd C4-0))
+   )
+   (wire (path TOP 76200  -10414000 -2413000 -10414000 -635000 -9017000 -635000)
+    (connect (terminal pin R4-1) (terminal pin U3-2))
+   )
+   (wire (path TOP 76200  -1206500 -63500 -508000 -63500 -508000 3683000
+     -893000 3683000)
+    (connect (terminal wire) (terminal pin "ESP32 CAM"-0))
+   )
+   (wire (path TOP 76200  -8255000 -1651000 -8255000 -1206500 -8509000 -1206500
+     -8509000 -889000)
+    (connect (terminal pin C3-1) (terminal smd C4-0))
+   )
+   )
+   (Net #00106 
+   (rule
+   )
+   (wire (path TOP 76200  -893000 2921000 -1460500 2921000 -1460500 1397000
+     -1587500 1270000 -9017000 1270000 -9144000 1397000 -9652000 1397000)
+    (connect (terminal pin "ESP32 CAM"-3) (terminal pin R3-0))
+    (type protect)
+   )
+   )
+   (Net #00113 
+   (rule
+   )
+   )
+   (Net #00114 
+   (rule
+   )
+   (wire (path TOP 76200  -9652000 -1651000 -9652000 -1270000 -9144000 -1270000)
+    (connect (terminal pin R3-1) (terminal pin Q1-0))
+   )
+   (wire (path TOP 76200  -9906000 -2159000 -9652000 -2159000 -9652000 -1651000)
+    (connect (terminal pin R1-1) (terminal pin R3-1))
+   )
+   )
+   (Net #00115 
+   (rule
+   )
+   (wire (path TOP 76200  -1397000 -2159000 -1841500 -2159000 -1841500 -2349500
+     -10096500 -2349500 -10096500 -952500 -9017000 -952500 -9017000 -1143000)
+    (connect (terminal pin R2-0) (terminal pin Q1-1))
+   )
+   )
+   (Net #00116 
+   (rule
+   )
+   )
+   (Net #00138 
+   (rule
+   )
+   (wire (path TOP 76200  -9017000 -127000 -8255000 -127000 -8255000 254000)
+    (connect (terminal pin U3-0) (terminal pin C2-1))
+   )
+   (wire (path TOP 76200  -8255000 254000 -7747000 254000)
+    (connect (terminal pin C2-1) (terminal smd C1-0))
+   )
+   )
+   (Net #00139 
+   (rule
+   )
+   )
+   (Net +12V 
+   (rule
+   )
+   (wire (path TOP 76200  -6985000 2667000 -6985000 2476500 -7366000 2476500
+     -7366000 4318000 -6985000 4318000 -6985000 4191000)
+    (connect (terminal pin "MOTOR DRIVE"-7) (terminal pin "MOTOR DRIVE2"-7))
+   )
+   )
+   (Net +5V 
+   (rule
+   )
+   (wire (path TOP 76200  -8763000 4191000 -8763000 4953000)
+    (connect (terminal pin "MOTOR DRIVE2"-0) (terminal pin "MOTOR DRIVE2"-15))
+   )
+   (wire (path TOP 76200  -8763000 2667000 -8763000 3429000)
+    (connect (terminal pin "MOTOR DRIVE"-0) (terminal pin "MOTOR DRIVE"-15))
+   )
+   (wire (path TOP 76200  -8763000 3429000 -8763000 4191000)
+    (connect (terminal pin "MOTOR DRIVE"-15) (terminal pin "MOTOR DRIVE2"-0))
+   )
+   (wire (path TOP 76200  -8763000 4953000 -8509000 4953000)
+    (connect (terminal pin "MOTOR DRIVE2"-15) (terminal pin "MOTOR DRIVE2"-14))
+   )
+   )
+   (Net 9 
+   (rule
+   )
+   )
+   (Net GND 
+   (rule
+   )
+   (wire (path TOP 76200  -8763000 254000 -8763000 761656 -9969500 761656
+     -9969500 5207000 -8001000 5207000 -8001000 4953000)
+    (connect (terminal pin C2-0) (terminal pin "MOTOR DRIVE2"-12))
+   )
+   (wire (path TOP 76200  -8763000 -1651000 -8763000 -1841500 -8019000 -1841500
+     -8019000 -889000)
+    (connect (terminal pin C3-0) (terminal smd C4-1))
+   )
+   (wire (path TOP 76200  -9017000 -381000 -9334500 -381000 -9334500 254000
+     -8763000 254000)
+    (connect (terminal pin U3-1) (terminal pin C2-0))
+   )
+   (wire (path TOP 76200  -8019000 -889000 -7747000 -889000 -7747000 -366000)
+    (connect (terminal smd C4-1) (terminal smd C1-1))
+   )
+   (wire (path TOP 76200  -9017000 -381000 -8699500 -381000 -8699500 -1270000
+     -8890000 -1270000)
+    (connect (terminal pin U3-1) (terminal pin Q1-2))
+   )
+   (wire (path TOP 76200  -8890000 -1270000 -8890000 -1460500 -8763000 -1460500
+     -8763000 -1651000)
+    (connect (terminal pin Q1-2) (terminal pin C3-0))
+   )
+   (wire (path TOP 76200  -7747000 2667000 -7874000 2667000)
+    (connect (terminal pin "MOTOR DRIVE"-4) (terminal wire))
+   )
+   (wire (path TOP 76200  -8001000 4191000 -8128000 4191000 -8128000 3937000
+     -8636000 3937000 -8636000 4699000 -8001000 4699000 -8001000 4953000)
+    (connect (terminal pin "MOTOR DRIVE2"-3) (terminal pin "MOTOR DRIVE2"-12))
+   )
+   (wire (path TOP 76200  -8001000 4191000 -8001000 3429000)
+    (connect (terminal pin "MOTOR DRIVE2"-3) (terminal pin "MOTOR DRIVE"-12))
+   )
+   (wire (path TOP 76200  -1651000 3429000 -1651000 3683000)
+    (connect (terminal pin ARD1-6) (terminal pin ARD1-7))
+   )
+   (wire (path TOP 76200  -1651000 3683000 -2822065 3683000 -2822065 5905500
+     -7747000 5905500 -7747000 4953000)
+    (connect (terminal pin ARD1-7) (terminal pin "MOTOR DRIVE2"-11))
+   )
+   (wire (path TOP 76200  -7747000 4953000 -8001000 4953000)
+    (connect (terminal pin "MOTOR DRIVE2"-11) (terminal pin "MOTOR DRIVE2"-12))
+   )
+   (wire (path TOP 76200  -7747000 4191000 -8001000 4191000)
+    (connect (terminal pin "MOTOR DRIVE2"-4) (terminal pin "MOTOR DRIVE2"-3))
+   )
+   (wire (path TOP 76200  -7874000 3429000 -7747000 3429000)
+    (connect (terminal wire) (terminal pin "MOTOR DRIVE"-11))
+   )
+   (wire (path TOP 76200  -8001000 2667000 -7874000 2667000)
+    (connect (terminal pin "MOTOR DRIVE"-3) (terminal wire))
+   )
+   (wire (path TOP 76200  -7747000 3429000 -7747000 2667000)
+    (connect (terminal pin "MOTOR DRIVE"-11) (terminal pin "MOTOR DRIVE"-4))
+   )
+   (wire (path TOP 76200  -8001000 3429000 -7874000 3429000)
+    (connect (terminal pin "MOTOR DRIVE"-12) (terminal wire))
+   )
+   (wire (path TOP 76200  -1651000 3429000 -893000 3428999 -893000 3429000)
+    (connect (terminal pin ARD1-6) (terminal pin "ESP32 CAM"-1))
+    (type protect)
+   )
+   )
+   (Net IR1 
+   (rule
+   )
+   )
+   (Net IR2 
+   (rule
+   )
+   )
+   (Net PIN8 
+   (rule
+   )
+   (wire (path TOP 76200  -6477000 3302000 -6858000 3302000 -6858000 2349500
+     -8128000 2349500 -8128000 2921000 -8636000 2921000 -8636000 2222500
+     -9842500 2222500 -9842500 1143000 -1333500 1143000 -1333500 2413000
+     -893000 2413000)
+    (connect (terminal pin ARD1-22) (terminal pin "ESP32 CAM"-5))
+   )
+   )
+   (Net PR1 
+   (rule
+   )
+   )
+   (Net RX 
+   (rule
+   )
+   )
+   (Net S1 
+   (rule
+   )
+   (wire (path TOP 76200  -8509000 4191000 -8509000 4445000 -7366000 4445000
+     -7366000 5651500 -6159500 5651500 -6159500 3937000 -6477000 3937000)
+    (connect (terminal pin "MOTOR DRIVE2"-1) (terminal pin ARD1-20))
+   )
+   )
+   (Net S2 
+   (rule
+   )
+   (wire (path TOP 76200  -7239000 4191000 -7239000 3683000 -6477000 3683000)
+    (connect (terminal pin "MOTOR DRIVE2"-6) (terminal pin ARD1-21))
+   )
+   )
+   (Net S4 
+   (rule
+   )
+   (wire (path TOP 76200  -6477000 4445000 -7239000 4445000 -7239000 4953000)
+    (connect (terminal pin ARD1-18) (terminal pin "MOTOR DRIVE2"-9))
+   )
+   )
+   (Net S5 
+   (rule
+   )
+   (wire (path TOP 76200  -6477000 4699000 -6985000 4699000 -6985000 4953000)
+    (connect (terminal pin ARD1-17) (terminal pin "MOTOR DRIVE2"-8))
+   )
+   )
+   (Net S7 
+   (rule
+   )
+   (wire (path TOP 76200  -8509000 2667000 -8509000 2095500 -6731000 2095500
+     -6731000 2540000 -6477000 2540000)
+    (connect (terminal pin "MOTOR DRIVE"-1) (terminal pin ARD1-25))
+   )
+   )
+   (Net S8 
+   (rule
+   )
+   (wire (path TOP 76200  -7239000 2667000 -7239000 3048000 -7112000 3048000
+     -7112000 3556000 -6858000 3556000 -6858000 3492500 -6286500 3492500
+     -6286500 2794000 -6477000 2794000)
+    (connect (terminal pin "MOTOR DRIVE"-6) (terminal pin ARD1-24))
+   )
+   )
+   (Net TX 
+   (rule
+   )
+   )
+   (Net VCC/VDD 
+   (rule
+   )
+   )
+   (Net {NC-1} 
+   (via PS10 2250000 6750000 (net {NC-1} )
+    (type protect))
+   )
+   (Net {NC-2} 
+   (via PS10 -10500000 6750000 (net {NC-2} )
+    (type protect))
+   )
+   (Net {NC-3} 
+   (via PS10 2250000 -2250000 (net {NC-3} )
+    (type protect))
+   )
+  )
+ )
